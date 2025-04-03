@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="porfolio.css"/>
 </head>
 <body>
-    <!-- Header Section -->
+    
     <header>
         <nav class="navbar">
             <div class="logo">Portfolio</div>
@@ -25,7 +25,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Hi, I'm <span class="highlight">Clyde Kipkoech</span></h1>
@@ -84,7 +83,7 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    
     <section id="portfolio" class="portfolio">
         <div class="portfolio-container">
             <h2 class="section-title">My Portfolio</h2>
@@ -107,7 +106,7 @@
                
                 <div class="portfolio-item" data-category="web">
                     <div class="portfolio-image">
-                        <img src="" alt="Project 4">
+                        <img src="/assets/weather.png" alt="Project 4">
                     </div>
                     <div class="portfolio-info">
                         <div class="portfolio-category">Web Design</div>
@@ -122,7 +121,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+   
     <section id="contact" class="contact">
         <h2 class="section-title">Contact Me</h2>
         <div class="contact-content">
@@ -167,11 +166,10 @@
                 <a href="#" class="social-link">FB</a>
                 <a href="#" class="social-link">TW</a>
                 <a href="#" class="social-link">IG</a>
-                <a href="#" class="social-link">LI</a>
-                <a href="#" class="social-link">GH</a>
+                
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Your Portfolio. All Rights Reserved.</p>
+                <p>&copy; 2025 Clyde Kipkoech Portfolio. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -179,7 +177,7 @@
     <!-- JavaScript -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Mobile Menu Toggle
+            
             const hamburger = document.querySelector('.hamburger');
             const navLinks = document.querySelector('.nav-links');
             
@@ -187,7 +185,7 @@
                 navLinks.classList.toggle('active');
             });
 
-            // Close mobile menu when clicking a nav link
+            
             const navItems = document.querySelectorAll('.nav-links a');
             navItems.forEach(item => {
                 item.addEventListener('click', function() {
@@ -218,7 +216,7 @@
             
             filterButtons.forEach(button => {
                 button.addEventListener('click', function() {
-                    // Remove active class from all buttons
+                    
                     filterButtons.forEach(btn => btn.classList.remove('active'));
                     
                     // Add active class to clicked button
@@ -249,10 +247,10 @@
                     const message = document.getElementById('message').value;
                     
                     // Here you would typically send the form data to your server
-                    // For this example, we'll just show an alert
+                    
                     alert(`Thank you for your message, ${name}! I'll get back to you soon.`);
                     
-                    // Reset form
+                    
                     contactForm.reset();
                 });
             }
